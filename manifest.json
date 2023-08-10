@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Update bookmark with timestamp",
+    "version": "1.0",
+    "description": "Quickly update your bookmark and record when it was.",
+    "homepage_url": "https://github.com/cR6fgjjfgJw/update-bookmark-with-timestamp",
+    "icons": {
+        "48": "icons/update-bookmark-with-timestamp-48.png"
+    },
+    "permissions": [
+        "tabs",
+        "menus",
+        "bookmarks"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    }
+}
