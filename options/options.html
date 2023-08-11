@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="options.css" />
+</head>
+
+<body>
+    <form>
+        <fieldset class="style-options">
+            <legend>Choose updating style</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="no-timestamp" name="updating-style" value="no-timestamp" />
+                    <label for="no-timestamp">No timestamp</label>
+                </li>
+                <li>
+                    <input type="radio" id="with-timestamp" name="updating-style" value="with-timestamp" />
+                    <label for="with-timestamp">With timestamp</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="with-timestamp-radio-buttons">
+            <legend>If you chose "With timestamp", choose a time-stamp position</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="beginning-timestamp" name="timestamp-position"
+                        value="beginning-timestamp" />
+                    <label for="beginning-timestamp">At the beginning</label>
+                </li>
+                <li>
+                    <input type="radio" id="ending-timestamp" name="timestamp-position" value="ending-timestamp" />
+                    <label for="ending-timestamp">At the ending</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="with-timestamp-checkboxes">
+            <legend>If you chose "With timestamp", choose the elements to display</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="year" value="year" />
+                    <label for="year">Year</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="month" value="month" />
+                    <label for="month">Month</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="day" value="day" />
+                    <label for="day">day</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="hour" value="hour" />
+                    <label for="hour">Hours</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="minute" value="minute" />
+                    <label for="minute">Minutes</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="second" value="second" />
+                    <label for="second">Seconds</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+    <script src="options.js"></script>
+</body>
+
+</html>
