@@ -3,7 +3,7 @@
     "name": "Update bookmark with timestamp",
     "version": "1.0",
     "description": "Quickly update your bookmark and record when it was.",
-    "homepage_url": "https://github.com/cR6fgjjfgJw/update-bookmark-with-timestamp",
+    "homepage_url": "https://github.com/Koppa-JP/update-bookmark-with-timestamp",
     "icons": {
         "48": "icons/update-bookmark-with-timestamp-48.png"
     },
@@ -21,10 +21,5 @@
             "background.js"
         ],
         "persistent": false
-    },
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "updatebookmarkwithtimestamp@example.com"
-        }
     }
 }
