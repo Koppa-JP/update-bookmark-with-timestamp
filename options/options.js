@@ -51,6 +51,11 @@ function saveOptions() {
         checkedList.push("#second");
     }
 
+    // Handle the case when none of the elements are chosen.
+    if (!checkedList[2]) {
+        updatingStyle = "no-timestamp";
+    }
+
     // Save data to the local storage.
     browser.storage.local.set({
         updatingStyle: updatingStyle,

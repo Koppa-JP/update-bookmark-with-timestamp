@@ -36,16 +36,19 @@ async function updateBookmark(bookmarkId) {
         } else if (timestampPositionObject.timestampPosition === "ending-timestamp") {
             newTitle = tabs[0].title + "(" + formatToday(dateFormatOptionsObject.dateFormatOptions) + ")";
         }
+        browser.bookmarks.update(bookmarkId, { title: newTitle, url: newUrl });
     }
     catch {
-        console.error(error)
+        browser.bookmarks.update(bookmarkId, { title: newTitle, url: newUrl });
     }
-    browser.bookmarks.update(bookmarkId, { title: newTitle, url: newUrl });
-
 }
 
 browser.menus.onClicked.addListener(async (info) => {
     if (info.menuItemId === "update-bookmark") {
-        await updateBookmark(info.bookmarkId)
+        try {
+            await updateBookmark(info.bookmarkId);
+        } catch (error) {
+            console.error(error);
+        }
     }
 });
